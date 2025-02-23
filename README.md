@@ -1,0 +1,1 @@
+this is the place where my website is from. many of the files you see downloadable on the site can be manually downloaded here. there is a separate repository for my dotfiles and my other important things whenever i have to switch computers or operating systems, but that has not been created yet. feel free to search through the code.
