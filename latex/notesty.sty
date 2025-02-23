@@ -1,0 +1,275 @@
+\ProvidesPackage{notesty}
+
+% MATH TYPESETTING
+
+\RequirePackage{mathtools}
+\RequirePackage{amsmath}
+\RequirePackage{cancel}
+\RequirePackage{cases}
+\RequirePackage{gensymb}
+\RequirePackage{amsthm}
+\RequirePackage{upgreek}
+\RequirePackage{amssymb}
+
+
+% GENERAL
+
+\RequirePackage{caption}
+\RequirePackage{graphicx}
+\RequirePackage{csquotes}
+\RequirePackage{scalerel}
+
+
+% FORMATTING
+
+\RequirePackage{parskip}
+\RequirePackage{underscore}
+\RequirePackage{subcaption}
+\RequirePackage{microtype}
+\RequirePackage[shortlabels]{enumitem}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{multicol}
+     \colorlet{shadecolor}{black!15}
+     \parindent 0in
+     \parskip 12pt
+
+
+% tikz and PGFplots
+
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes.geometric,fit,patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+\RequirePackage{tkz-euclide}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+\RequirePackage{pgffor}
+
+
+% tcolorbox MACROS AND COLORING
+
+\RequirePackage[most]{tcolorbox}
+
+\newcommand{\defn}[2]{
+\begin{tcolorbox}[
+	colback=blue!5!white,
+	colframe=blue!75!black,
+	parbox=false
+	]
+	\begin{definitionnofs}[#1]
+
+	\end{definitionnofs}
+	#2
+\end{tcolorbox}
+}
+
+\newcommand{\thm}[3]{
+\begin{tcolorbox}[parbox=false]
+\begin{theoremnofs}[#1]
+    \label{#2}
+\end{theoremnofs}
+#3
+\end{tcolorbox}
+}
+
+\newcommand{\ex}[2]{
+\begin{tcolorbox}[
+	colback=lime!15!white,
+	colframe=lime!75!black,
+	parbox=false
+	]
+	\begin{exmpnofs}[#1]
+
+	\end{exmpnofs}
+	#2
+\end{tcolorbox}
+}
+
+\newcommand{\postl}[2]{
+\begin{tcolorbox}[
+	colback=green!5!white,
+	colframe=green!75!black,
+	parbox=false
+	]
+	\begin{postnofs}[#1]
+	\end{postnofs}
+	#2
+\end{tcolorbox}
+}
+
+\newcommand{\property}[2]{
+\begin{tcolorbox}[
+	colback=red!5!white,
+	colframe=red!75!black,
+	parbox=false
+	]
+	\begin{propnofs}[#1]
+
+	\end{propnofs}
+	#2
+\end{tcolorbox}
+}
+
+\newcommand{\rmk}[2]{
+\begin{tcolorbox}[
+	blanker,
+	parbox=false,
+	borderline west={0.75mm}{0pt}{black},
+	left=15pt,
+	right=15pt
+	]
+	\begin{remark}[#1]
+
+	\end{remark}
+	#2
+\end{tcolorbox}
+}
+
+\newcommand{\expl}[2]{
+\begin{tcolorbox}[
+	blanker,
+	parbox=false,
+	borderline west={0.75mm}{0pt}{CadetBlue},
+	left=15pt
+	]
+	\begin{explain}[#1]
+
+	\end{explain}
+	#2
+\end{tcolorbox}
+}
+
+\newcommand{\tnote}[2]{
+\begin{tcolorbox}[
+	blanker,
+	parbox=false,
+	borderline north={0.7mm}{0pt}{black!50},
+	borderline south={0.7mm}{0pt}{black!50},
+	left=15pt,
+	top=12pt,
+	bottom=12pt,
+	right=15pt
+	]
+	\begin{note}[#1]
+
+	\end{note}
+	#2
+\end{tcolorbox}
+}
+
+
+
+\newtcolorbox{graybox}{
+     colback=black!10,
+     parbox=false,
+     boxrule=0mm,
+     sharp corners,
+     breakable,
+}
+
+\newtcolorbox{outlinedbox}{
+     colback=white,
+     boxrule=0.25mm,
+     sharp corners,
+     parbox=false,
+     colframe=black,
+}
+
+
+% CUSTOM COMMANDS
+
+\newcommand{\figimg}[3]{
+    \begin{figure}[h]
+        \centering
+        \includegraphics[#1\textwidth]{#2}
+        \caption{#3}
+    \end{figure} \newline
+    }
+\newcommand{\segm}[1]{
+\overline{#1}
+}
+\newcommand{\checkeq}{\stackrel{\checkmark}{=}}
+\newcommand{\m}{\text{m}}
+\newcommand{\nextline}{\\ [0.5ex]}
+
+% -----------------------------------------------------------------------
+% FORMATTING CONFIG
+
+% Table and Figure Environment Numbering
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\numberwithin{figure}{section}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\numberwithin{table}{section}
+\renewcommand{\arraystretch}{2}
+
+% ---------------------------------------------------------------------
+% Theorem Environments
+
+\newtheoremstyle{mthm} % name 
+    {7pt}                    % Space above
+    {}                    % Space below
+    {\normalfont}                   % Body font
+    {}                           % Indent amount
+    {\sffamily\bfseries}                   % Theorem head font
+    {.}                          % Punctuation after theorem head
+    {.5em}                       % Space after theorem head
+    {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+    
+\newtheoremstyle{mthmnofs} % name 
+    {\topsep}                    % Space above
+    {\topsep}                    % Space below
+    {\normalfont}                   % Body font
+    {}                           % Indent amount
+    {\sffamily\bfseries}                   % Theorem head font
+    {}                          % Punctuation after theorem head
+    {0.5em}                       % Space after theorem head
+    {} % Theorem head spec
+
+% ---------------------------------------------------------------------
+% Standalone Environments
+
+\theoremstyle{mthm}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem*{explain}{Explanation}
+\newtheorem*{sol}{Solution}
+\newtheorem{prop}{Property}[section]
+\newtheorem{post}{Postulate}
+
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem*{ques}{Question}
+\newtheorem{axiom}{Axiom}
+
+
+
+% ---------------------------------------------------------------------
+% For the tcolorbox Macros; nofs means "no full stop"
+
+\theoremstyle{mthmnofs}
+\newtheorem{lemmanofs}{Lemma}[section]
+\newtheorem*{notenofs}{Note}
+\newtheorem{theoremnofs}{Theorem}[section]
+\newtheorem{definitionnofs}{Definition}[section]
+\newtheorem{exmpnofs}{Example}[section]
+\newtheorem{corollarynofs}{Corollary}[section]
+\newtheorem{propnofs}{Property}[section]
+\newtheorem{postnofs}{Postulate}
+\newtheorem*{note}{Note}
+
+
+
+
+
+
+
+

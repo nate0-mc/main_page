@@ -1,1 +1,94 @@
-<center><h1>Work in progress!</h1></center>
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+    <link rel="icon" href="favicon/latex-info.png">
+    <link rel="stylesheet" href="css/latex-info.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>LaTeX Information</title>
+    <body>
+        <center>
+        <header id="head1">
+            <span id="span1">
+            <a href="index.html" target="_blank" title="The Homepage of this Website">Homepage</a>
+            &nbsp; &nbsp;
+            <a href="pdfs.html" target="_blank" title="Notes, Reviewers, and Guides">PDFs</a>
+            &nbsp; &nbsp;
+            <a href="personal.html" target="_blank" title="Personal Info">Personal Info</a>
+            &nbsp; &nbsp;
+            <a href="blog_main.html" target="_"blank" title="Blogging my Experience as a Student and Mathematics Hobbyist">My Blog</a>
+            &nbsp; &nbsp;
+            <b>LaTeX Information</b>
+            &nbsp; &nbsp;
+            <a href="https://github.com/nate0-mc/main_page" target="_"blank" title="Website Repository">Github Repository</a>
+            </span>
+        </header>
+        </center>
+        <center>
+            <h1>\(\LaTeX\) Information and Downloads</h1>
+        </center>
+        <div class="parsty1">
+            <img src="media/gif/astolfo-happy.gif" height="275" alt="Astolfo from Fate Apocrypha" id="sakura">
+            This page is dedicated to info about what I do with LaTeX, including my typesetting.
+            <center>
+                <h2>LaTeX Style</h2>
+            </center>
+            <p>
+                Whenever I make \(\LaTeX\) documents, I always try to make it look appealing. Before when I was starting out, I was on a stoic mindset of "it should be formal because I'm dealing with the same language researchers use for papers!"
+            </p>
+            <p>
+                Now I have seen it more appealing to make them attractive to serve them more useful for the reader. You can see from the image on the bottom.
+                <center>
+                <img src="media/image/sample-latex.png" height="700" alt="A LaTeX Sample of my .sty and .cls Files" style="border: dotted; border-color: aqua">
+            </center>
+            <br>
+            How I made the document appearance is through the use of <tt>.sty</tt> and <tt>.cls</tt> files. I mostly use the <b>.sty</b> file for the packages for formatting and typesetting, and the <b>.cls</b> for the document layout and appearance.
+            </p>
+            <p>
+                You can download them here:
+                <ol>
+                    <li>
+                        <a href="latex/notescls.cls" class="a1" id="highlight" target="_blank"><tt>notescls.cls</tt></a> - The option <b>demure</b>, <pre>\documentclass[demure]{notescls}</pre> <u>is required</u> when loading it without the style file. Disable it when the style file is included in the preamble. This is to color the section numbers.<br><br> Edit the footer and header in the file. Just find it, I don't want to explain.
+                    </li>
+                    <li>
+                        <a href="latex/notesty.sty" class="a1" id="highlight" target="_blank"><tt>notesty.sty</tt></a> - Disable the <b>demure</b> option in the document class if you are loading this alongside it.
+                    </li>
+                </ol>
+                If you do end up using these files, credit me only in the source (albeit PDF output is optional and appreciated too.)<br><br>
+
+                <b>WARNING!</b> These files can be loaded independently from each other, but <i>compile your documents with LuaLaTeX.</i> Any other \(\LaTeX\) compiler excluding XeLaTeX won't work to my knowledge (XeLaTeX is outdated.)
+            </p>
+            <p>
+                If you need a tutorial on how to add these files to your document, just <a href="https://www.google.com/search?q=where+to+put+latex+custom+package" class="a1" id="highlight" target="_blank">use Google</a>. If you're too advanced for that, check out <a href="latex/file-tutorial.html" class="a1" id="highlight" target="_blank">this page</a>.
+            </p>
+            <center>
+                <h2>How I make my TikZpictures</h2>
+            </center>
+            I am not that talented to learn TikZ (I am currently in the process of learning that right now) so I use a GUI editor to make the diagrams. The GUI is an online editor that is free (paid is optional),
+            <a href="https://mathcha.io" class="a1" id="highlight" target="_blank">Mathcha.io</a>. <br><br>
+            You already noticed from looking at the source code of my documents, everytime there is a tikzpicture it looks horrendous in its syntax. I just copy-pasted it from the site's drawing area.
+            <center>
+                <h2>How I write my LaTeX source code</h2>
+            </center>
+            This is <a href="https://web.evanchen.cc/latex-style-guide.html" class="a1" id="highlight" target="_blank">inspiration from Evan Chen</a>, since he did something like this too. Aside from a few exceptions, I always try to make my source code clean. Some source code I provide are not always like this (mostly because I was only a couple months into \(\LaTeX\).) <br><br>
+            Here is a PDF (insert link here in the future) that lists down how I style my source code. The keywords in capital in the document are described in <a href="https://www.rfc-editor.org/rfc/rfc2119" class="a1" id="highlight" target="_blank">RFC 2119</a>.
+    </div>
+    </body>
+    <br><br>
+    <footer>
+        <b>My Socials</b>
+        <span id="a-1">
+        &nbsp; &nbsp;
+            <a href="https://discord.gg/fS7NNyEW78" target="_blank" title="Inform me of any errata or if you want to chat and hang out"  id="a-1">Discord Server</a>
+            &nbsp; &nbsp;
+            <a href="https://youtube.com/@nate0___" target="_blank" title="My Dumb YouTube Channel" id="a-1">YouTube</a>
+            &nbsp; &nbsp;
+            <a href="https://www.reddit.com/u/nate0___/s/0uFBaJeH3V" target="_blank" title="Reddit" id="a-1">Reddit</a>
+            &nbsp; &nbsp;
+            <a href="https://github.com/nate0-mc" target="_blank" title="GitHub Profile" id="a-1">GitHub</a>
+        </span>
+    </footer>
+    <hr>
+</html>

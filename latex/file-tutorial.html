@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+    <link rel="icon" href="favicon/latex-info.png">
+    <link rel="stylesheet" href="css/latex-info1.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>How to install a style and class file</title>
+    <body>
+        <center  class="cool">
+            <h1>How to use a style and class file?</h1>
+        </center>
+    <div class="parsty1">
+<!--            <img src="media/gif/astolfo-farewell.gif" height="275" alt="Astolfo from Fate Apocrypha" id="sakura"> -->
+        I will assume you have \(\LaTeX\) installed on your personal computer (or you are using an inferior option like <a href="https://web.evanchen.cc/faq-latex.html#L-2a" class="a1" id="highlight" target="_blank">Overleaf</a>.) 
+        <ol>
+            <li>
+                Firstly, navigate to the directory of your LaTeX file. For me I will use Windows; say it is in
+                <tt>
+                    C:\Users\User\Documents\Project
+                </tt>.
+            </li>
+            <li>
+                Download either both, or one of the files. I will say I downloaded both.
+            </li>
+            <li>
+                Go to the folder/directory that you downloaded it in and copy/cut/move the file(s) to your desired location; ours is <tt>C:\Users\User\Documents\Project</tt>.
+            </li>
+            <li>
+                Go to your <tt>.tex</tt> file and insert in the preamble (if you are compiling both files):<br><br>
+                <tt>
+                    \documentclass{notescls}<br>
+                    \usepackage{notesty}
+                </tt><br><br>
+                | If you are using only the <tt>.sty</tt> file:<br><br>
+                <tt>
+                    \documentclass{article}<br>
+                    \usepackage{notesty}
+                </tt><br><br>
+                I'm using the article class as an example. <br><br>
+                | If you are using only the <tt>.cls</tt> file, DO NOT forget to add the <b>demure</b> option.<br><br>
+                <tt>
+                    \documentclass[demure]{notescls} <br>
+                    \usepackage{amsthm}
+                </tt><br><br>
+                I'm using <tt>amsthm</tt> as an example.
+            </li>
+            <li>
+                Compile your document using LuaLaTeX. If I remember poorly, XeLaTeX also works with some caveats (it is not recommended as it is old) and I have not tried LatexMK.
+            </li>
+        </ol>
+        The reason why, standalone, the <tt>notescls</tt> class can not work without the <b>demure</b> option is because a package (<tt>xcolor</tt>) is already being used in the <tt>notesty</tt> file and I had to make sure both files can work independently. So I decided to add an option for the class file in order for it to work independent from the style file (independent as in without the other file.) If I decided to only make the package to one file, then you would need both files. Knowing you, you probably are just interested in the document style or the way I typeset. Eitherway, I have yet to find a solution to this. <br><br><br>
+        <center>
+            <span  style="font-family: Arial; border: dotted; border-color: rgb(134, 134, 134)">
+                <a href="https://nate0-mc.github.io/main_page/index.html" class="a1" id="highlight" target="_blank">Back to the homepage.</a>
+            </span>
+        </center>
+    </div>
+    </body>
+    <br><br>
+    <footer>
+        <b>My Socials</b>
+        <span id="a-1">
+        &nbsp; &nbsp;
+            <a href="https://discord.gg/fS7NNyEW78" target="_blank" title="Inform me of any errata or if you want to chat and hang out"  id="a-1">Discord Server</a>
+            &nbsp; &nbsp;
+            <a href="https://youtube.com/@nate0___" target="_blank" title="My Dumb YouTube Channel" id="a-1">YouTube</a>
+            &nbsp; &nbsp;
+            <a href="https://www.reddit.com/u/nate0___/s/0uFBaJeH3V" target="_blank" title="Reddit" id="a-1">Reddit</a>
+            &nbsp; &nbsp;
+            <a href="https://github.com/nate0-mc" target="_blank" title="GitHub Profile" id="a-1">GitHub</a>
+        </span>
+    </footer>
+    <hr>
+</html>
