@@ -40,9 +40,9 @@
                     \usepackage{notesty}
                 </tt><br><br>
                 I'm using the article class as an example. <br><br>
-                | If you are using only the <tt>.cls</tt> file, DO NOT forget to add the <b>demure</b> option.<br><br>
+                | If you are using only the <tt>.cls</tt> file:<br><br>
                 <tt>
-                    \documentclass[demure]{notescls} <br>
+                    \documentclass{notescls} <br>
                     \usepackage{amsthm}
                 </tt><br><br>
                 I'm using <tt>amsthm</tt> as an example.
@@ -51,7 +51,7 @@
                 Compile your document using LuaLaTeX. If I remember poorly, XeLaTeX also works with some caveats (it is not recommended as it is old) and I have not tried LatexMK.
             </li>
         </ol>
-        The reason why, standalone, the <tt>notescls</tt> class can not work without the <b>demure</b> option is because a package (<tt>xcolor</tt>) is already being used in the <tt>notesty</tt> file and I had to make sure both files can work independently. So I decided to add an option for the class file in order for it to work independent from the style file (independent as in without the other file.) If I decided to only make the package to one file, then you would need both files. Knowing you, you probably are just interested in the document style or the way I typeset. Eitherway, I have yet to find a solution to this. <br><br><br>
+        <br><br>
         <center>
             <span  style="font-family: Arial; border: dotted; border-color: rgb(134, 134, 134)">
                 <a href="https://nate0-mc.github.io/main_page/index.html" class="a1" id="highlight" target="_blank">Back to the homepage.</a>

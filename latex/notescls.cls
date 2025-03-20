@@ -1,24 +1,10 @@
 \ProvidesClass{notescls}
-\LoadClass[legalpaper, 12pt, twoside]{article}
-
-% "DEMURE" OPTION
-
-\newif\ifdemure
-\DeclareOption{demure}{%
-    \demuretrue
-    \typeout{very demure and cutesie and mindful}
-}
-
-\ProcessOptions\relax
-
-\ifdemure
-    \AtEndOfClass{
-        \RequirePackage[dvipsnames]{xcolor}
-    }
-\fi
+\LoadClass[12pt, twoside]{article}
+% [legalpaper, 12pt, twoside]
 
 % PACKAGES
 
+\RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{geometry}
 \RequirePackage[toc,page]{appendix}
 \RequirePackage{hyperref}
@@ -78,19 +64,25 @@
 \renewcommand{\cftloftitlefont}{\Large\bfseries\sffamily} % "List of Figures" heading
 
 
-% Page Itself
-\geometry{margin=1.1in, headheight=18pt, twoside=true}
+% Page Layout and Margins
+\geometry{a4paper, portrait, margin=1.1in}
+
 
 
 % fancyhdr
+% ! ! ! EDIT THE HEADER AND FOOTER TEXT HERE. REPLACE "HEADER" AND "FOOTER" WITH WHATEVER ! ! !
 \pagestyle{fancy}
 \fancyhead{} % clear all header fields
 \fancyhead[RO,LE]{{\fontfamily{qag}\selectfont\textbf{HEADER}}}
 \fancyfoot{} % clear all footer fields
 \fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,RE]{FOOTER}
-\fancyheadoffset{0.65cm} 
-\fancyfootoffset{0.65cm}
+\fancyfoot[LO,RE]{EDIT IN THE CLS FILE}
+\fancyheadoffset{0.8cm} 
+\fancyfootoffset{0.8cm}
+
+\renewcommand{\subsectionmark}[1]{%
+  \markright{\MakeUppercase{\thesubsection.\ #1}}}%
+
 
 
 % Header and Footer Rule for fancyhdr

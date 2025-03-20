@@ -50,10 +50,10 @@
                 You can download them here:
                 <ol>
                     <li>
-                        <a href="latex/notescls.cls" class="a1" id="highlight" target="_blank"><tt>notescls.cls</tt></a> - The option <b>demure</b>, <pre>\documentclass[demure]{notescls}</pre> <u>is required</u> when loading it without the style file. Disable it when the style file is included in the preamble. This is to color the section numbers.<br><br> Edit the footer and header in the file. Just find it, I don't want to explain.
+                        <a href="latex/notescls.cls" class="a1" id="highlight" target="_blank"><tt>notescls.cls</tt></a> -  Edit the footer and header in the file. Just find it, I don't want to explain.
                     </li>
                     <li>
-                        <a href="latex/notesty.sty" class="a1" id="highlight" target="_blank"><tt>notesty.sty</tt></a> - Disable the <b>demure</b> option in the document class if you are loading this alongside it.
+                        <a href="latex/notesty.sty" class="a1" id="highlight" target="_blank"><tt>notesty.sty</tt></a> - The package has an option; <tt>kawaii</tt>. This makes the <tt>tcbtheorem</tt> boxes aesthetic coloring. When I have the time, I will put a comparison picture somewhere. Disable it and get a more vibrant coloring.
                     </li>
                 </ol>
                 If you do end up using these files, credit me only in the source (albeit PDF output is optional and appreciated too.)<br><br>
@@ -73,7 +73,25 @@
                 <h2>How I write my LaTeX source code</h2>
             </center>
             This is <a href="https://web.evanchen.cc/latex-style-guide.html" class="a1" id="highlight" target="_blank">inspiration from Evan Chen</a>, since he did something like this too. Aside from a few exceptions, I always try to make my source code clean. Some source code I provide are not always like this (mostly because I was only a couple months into \(\LaTeX\).) <br><br>
-            Here is a PDF (insert link here in the future) that lists down how I style my source code. The keywords in capital in the document are described in <a href="https://www.rfc-editor.org/rfc/rfc2119" class="a1" id="highlight" target="_blank">RFC 2119</a>.
+            <a href="latex/Typesetting_and_Sample_PDF.pdf" class="a1" id="highlight" target="_blank">This PDF</a>  lists down how I style my source code, and serves as a sample PDF for the templating.
+            <center>
+                <h2>Auxillary Information</h2>
+            </center>
+            <ul>
+                <li>
+                    I use TeXmaker on Windows to make these documents. On Linux, I use Neovim with VimTeX and LazyVim.
+                </li>
+                <li>
+                    LaTeX distribution on Windows is MikTeX, and on Linux it is TeXLive.
+                </li>
+                <li>
+                    I compile using LuaLaTeX, if that has not been clearer enough.
+                </li>
+                <li>
+                    If you want to get started with LaTeX, I am not the girl to explain how the language works. But, you can always use Google. A starter editor is Overleaf, but once you get the hang of it, I HIGHLY recommend a local editor like TeXmaker or anything else other than Overleaf. <br><br>
+                    Overleaf certainly has potential especially with cloud backups, but it is unbelievably inefficient and it has certain things a local editor would have for free.
+                </li>
+            </ul>
     </div>
     </body>
     <br><br>
