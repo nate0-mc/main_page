@@ -45,10 +45,9 @@ center{
     padding-right: 15px;
     padding-bottom: 10px;
     margin: auto;
-    background-color: #fffc5a;
-    height: 2325px;
+    background-color: hsl(355, 100%, 87%);
+    height: 975px;
     width: 800px;
-    font-family: "Trebuchet MS";
     font-size: 22px;
 }
 
@@ -58,6 +57,7 @@ center{
     display: flow-root;
     margin-top: 5px;
     margin-left: 25px;
+    margin-bottom: 3px;
     display: inline;
 }
 #highlight:hover{
@@ -77,4 +77,9 @@ center{
 .a1{
     text-decoration: none;
     color: #1205a4;
+}
+
+.a2{
+    text-decoration: none;
+    color: aquamarine
 }

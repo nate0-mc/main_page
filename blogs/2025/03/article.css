@@ -37,19 +37,22 @@ center{
     font-size: 15px
 }
 
+.small-arial{
+    font-family: "Arial";
+    font-size: 15px
+}
+
 .parsty1{
     border: solid;
-    border-width: 2px;
+    border-width: 0.25px;
     padding-left: 15px;
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
     margin: auto;
-    background-color: #fffc5a;
-    height: 2325px;
+    background-color: rgb(255, 250, 209);
     width: 800px;
-    font-family: "Trebuchet MS";
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #sakura{
@@ -58,6 +61,7 @@ center{
     display: flow-root;
     margin-top: 5px;
     margin-left: 25px;
+    margin-bottom: 3px;
     display: inline;
 }
 #highlight:hover{
@@ -77,4 +81,20 @@ center{
 .a1{
     text-decoration: none;
     color: #1205a4;
+}
+
+.return{
+    font-size: 22px;
+}
+
+.title{
+    border: solid;
+    border-width: 2px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin: auto;
+    background-color: rgb(234, 226, 156);
+    display: inline;
 }
