@@ -3,36 +3,30 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <html lang="en">
     <link rel="icon" href="favicon/favicon.jpg">
-    <link rel="stylesheet" href="css/full-style.css">
+    <link rel="stylesheet" href="css/simple-style.css">
     <title>My Homepage</title>
+    <style>
+        body {
+            background-image: url('a1.jpg');
+        }
+    </style>
+<script>
+    window.onload = function() {
+      const useOriginal = confirm(
+        "You are now viewing a mobile-friendly version of my website. Click OK to proceed, however, if you want to return to the original web page (if you clicked this on accident), click CANCEL."
+      );
+  
+      if (!useOriginal) {
+        window.location.href = "../index.html"; // change to your simpler page's filename
+      }
+      // if useOriginal is true, do nothing — stay on the current page
+    };
+  </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    body {
-        background-image: url('a.jpg');
-    }
-</style>
-<style>
-    body {
-      display: none;
-    }
-</style>
-<script>
-    window.onload = function() {
-      const useOriginal = confirm(
-        "⚠️ This website was deisgned for desktop.\n\nIf you are rendering on a smaller device (e.g a mobile phone, or a tablet with a small resolution), the website's elements will not render properly.\n\nClick OK if you still want to view the full website anyway. Otherwise, click CANCEL to view a more simpler webpage."
-      );
-  
-      if (useOriginal) {
-        document.body.style.display = "block";
-      } else {
-        window.location.href = "mobile/index-mobile.html";
-      }
-    };
-</script>
 <body>
     <center>
     <header id="head1">
@@ -59,7 +53,7 @@
     <div class="grid">
     <div class="parsty1">
     <p>
-       <img src="media/gif/sakura.gif" height="225" alt="Sakura Matou (from Fate Stay Night)" id="sakura">
+       <img src="../media/gif/sakura.gif" height="225" alt="Sakura Matou (from Fate Stay Night)" id="sakura">
         <b>Welcome dear reader!</b> <br>
         <hr>
         I am Natalie, or online as nate0___. I am a transgender girl who absolutely loves mathematics. My main socials can be found in the bottom of every page (although some are not listed<sup>1</sup>). I am a high school student, currently the fifth year (after completing junior high school and now in senior high.)   <br><br>
@@ -85,15 +79,15 @@
     <p>
         <b>Latest PDF</b>: <a href="https://nate0-mc.github.io/main_page/pdf/y11-term1.pdf" target="_blank" ="highlight" id="highlight" class="a1">General Mathematics: Term 1</a> <br>
         <sub>art by @machuuu68 on tw*tter </sub> <br> <br>
-        <img src="gallery/ryo1.jpg" alt="Ryo Yamada from Bocchi the Rock" height="150px"> <img src="gallery/nijiryo1.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px"> <img src="gallery/nijiryo2.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px"> <img src="gallery/nijiryo3.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px"> <img src="gallery/nijiryo4.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px">
+        <img src="../gallery/ryo1.jpg" alt="Ryo Yamada from Bocchi the Rock" height="150px"> <img src="../gallery/nijiryo1.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px"> <img src="../gallery/nijiryo2.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px"> <img src="../gallery/nijiryo3.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px"> <img src="../gallery/nijiryo4.jpg" alt="Ryo Yamada and Nijika Ijichi from Bocchi the Rock" height="150px">
     </p>
 </div>
 <div class="parsty3">
     <p>
-        <img src="gallery/me1.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> &nbsp; &nbsp; &nbsp;
-        <img src="gallery/me2.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> &nbsp; &nbsp; &nbsp;
-        <img src="gallery/me3.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> &nbsp; &nbsp; &nbsp;
-        <img src="gallery/me4.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> 
+        <img src="../gallery/me1.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> &nbsp; &nbsp; &nbsp;
+        <img src="../gallery/me2.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> &nbsp; &nbsp; &nbsp;
+        <img src="../gallery/me3.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> &nbsp; &nbsp; &nbsp;
+        <img src="../gallery/me4.jpg" title="A Picture of Me (I only have two outfits)" height="320px"> 
     </p>
     <p>
         <center><h2>Click for cool audio sourced "legally"!</h2></center>
@@ -101,33 +95,33 @@
         <ol>
             <li><i>Surfacing</i> by Slipknot (1999)<br></li>
             <audio controls loop>
-                <source src="media/audio/Surfacing.mp3" type="audio/mpeg">
+                <source src="../media/audio/Surfacing.mp3" type="audio/mpeg">
             </audio>
             <li><i>AmEN!</i> by Bring Me the Horizon ft. Lil Uzi Vert, Daryl Palumbo (2024)</li>
             <audio controls loop>
-                <source src="media/audio/AmEN.mp3" ype="audio/mpeg">
+                <source src="../media/audio/AmEN.mp3" ype="audio/mpeg">
             </audio>
             <li><i>Thank You For the Venom</i> by My Chemical Romance (2004)</li>
             <audio controls loop>
-                <source src="media/audio/Thank You for the Venom - 2025 Mix.mp3" ype="audio/mpeg">
+                <source src="../media/audio/Thank You for the Venom - 2025 Mix.mp3" ype="audio/mpeg">
             </audio>
             <li><i>Flashbacker</i> by Kessoku Band (2022)</li>
             <audio controls loop>
-                <source src="media/audio/Flashbacker.mp3" ype="audio/mpeg">
+                <source src="../media/audio/Flashbacker.mp3" ype="audio/mpeg">
             </audio>
             <li><i>Inertia</i> by AJR (2023)</li>
             <audio controls loop>
-                <source src="media/audio/Inertia.mp3" ype="audio/mpeg">
+                <source src="../media/audio/Inertia.mp3" ype="audio/mpeg">
             </audio>
             <li><i>Feel This Way</i> by chandol (2026)</li>
             <audio controls loop>
-                <source src="media/audio/Feel This Way.mp3" ype="audio/mpeg">
+                <source src="../media/audio/Feel This Way.mp3" ype="audio/mpeg">
             </audio>
         </ol>
     </p>
     <p>
         This website used to be <i>VERY</i> barebones, as in there was nothing but a basic HTML page with no background. Wanna see it?
-        <center><h2><a href="firstwebsite.html" target="_blank" ="highlight" id="highlight" class="a1">Click this link!</a></h2></center>
+        <center><h2><a href="../firstwebsite.html" target="_blank" ="highlight" id="highlight" class="a1">Click this link!</a></h2></center>
     </p>
     <p>
         <sub>Made with love &hearts; </sub>
