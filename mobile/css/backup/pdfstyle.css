@@ -30,36 +30,13 @@ footer{
 a{
     text-decoration: none;
     color: #a40595;
-  }
-
-center{
-    font-family: "Arial";
-    font-size: 15px
 }
 
-.parsty1{
-    border: solid;
-    border-width: 2px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    margin: auto;
-    background-color: #fffc5a;
-    height: 2325px;
-    width: 800px;
-    font-family: "Trebuchet MS";
-    font-size: 22px;
+.a1{
+    text-decoration: none;
+    color: #1205a4;
 }
 
-#sakura{
-    border: dashed;
-    float: right;
-    display: flow-root;
-    margin-top: 5px;
-    margin-left: 25px;
-    display: inline;
-}
 #highlight:hover{
     background-color: #ffffb6;
     display: inline;
@@ -74,7 +51,30 @@ center{
     color: #2c2c2c;
 }
 
-.a1{
-    text-decoration: none;
-    color: #1205a4;
+center{
+    font-family: "Arial";
+    font-size: 15px
+}
+
+.parsty1{
+    border: solid;
+    border-width: 2px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin: auto;
+    background-color: #aefdce;
+    height: 1500px;
+    width: 800px;
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+}
+
+#sakura{
+    border: dotted;
+    float: left;
+    display: flow-root;
+    margin: 10px;
+    margin-right: 25px;
 }

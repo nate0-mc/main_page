@@ -74,10 +74,9 @@ center{
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
-    margin: left;
-    margin-left:50px;
-    background-color: #ff79d55a;
-    height: 800px;
+    margin: auto;
+    background-color: #e08dc6ac;
+    height: 925px;
     width: 750px;
     font-family: "Trebuchet MS";
     font-size: 20px;    
@@ -91,8 +90,7 @@ center{
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
-    margin: left;
-    margin-left:50px;
+    margin: auto;
     margin-right: 500;
     margin-top: 20px;
     background-color: #5dffae5a;
@@ -110,20 +108,16 @@ center{
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
-    margin: right;
-    margin-right:50px;
-    margin-left: 100px;
-    margin-right: 500px;
-    margin-top: 20px;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom: 50px;
     background-color: #ff00665a;
     height: 1065px;
     width: 765px;
     font-family: "Trebuchet MS";
     font-size: 21.5px;    
     box-shadow: 10px 10px 25px;
-    position: absolute;
-    top: 10%;
-    left: 63.25%;
+=
 }
 
 .headtext{
@@ -195,26 +189,3 @@ audio{
 hr{
     border: 1px solid black;
   }
-
-.notice{
-    border: solid;
-    border-width: 2px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    margin: right;
-    margin-right:50px;
-    margin-left: 100px;
-    margin-right: 500px;
-    margin-top: 20px;
-    background-color: #ffffff70;
-    height: 250px;
-    width: 300px;
-    font-family: "Trebuchet MS";
-    font-size: 21.5px;    
-    box-shadow: 10px 10px 25px;
-    position: absolute;
-    top: 40%;
-    left: 42%
-}
